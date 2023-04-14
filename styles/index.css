@@ -5,6 +5,7 @@
   font-family: "Rubik", sans-serif;
 }
 nav {
+  padding: 0 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,11 +14,17 @@ nav {
 .logo {
   width: 100px;
 }
+
+.nav-icon {
+  width: 24px;
+  height: 24px;
+}
 .details {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   padding-right: 25px;
+  gap: 32px;
 }
 
 .wrapper {

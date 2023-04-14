@@ -28,11 +28,23 @@ $sql = "CREATE TABLE IF NOT EXISTS user (
     cartitems VARCHAR(255) NOT NULL
 )";
 
+
 if (mysqli_query($conn, $sql)) {
     echo "Table Users created successfully";
 } else {
     die("Error creating table: " . mysqli_error($conn));
 }
+
+$sql = "DELETE FROM products";
+if (!mysqli_query($conn, $sql)) {
+    die("Unable to delete all the data's" . mysqli_error($conn));
+}
+
+$sql = "DELETE FROM user";
+if (!mysqli_query($conn, $sql)) {
+    die("Unable to delete all the data's" . mysqli_error($conn));
+}
+
 
 $json_string = file_get_contents('./datas.json');
 $datas = json_decode($json_string);
