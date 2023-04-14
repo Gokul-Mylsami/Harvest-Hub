@@ -4,10 +4,10 @@
 
 <?php
 // connect to the database
-$servername = "db"; // Service name defined in docker-compose.yml
-$username = "root"; // MySQL username
-$password = "password123"; // MySQL password
-$dbname = "harvesthub"; // Name of the database
+$servername = "db";
+$username = "root";
+$password = "password123";
+$dbname = "harvesthub";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
