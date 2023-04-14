@@ -6,7 +6,7 @@
     "qtyleft": 10,
     "description": "Juicy and sweet mangoes grown in Maharashtra.",
     "product": "fruits",
-    "imageURL": ""
+    "imageURL": "https://kj1bcdn.b-cdn.net/media/70167/mango.jpg?width=1200"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "qtyleft": 25,
     "description": "Fresh, ripe tomatoes perfect for salads and curries.",
     "product": "vegetables",
-    "imageURL": ""
+    "imageURL": "https://media.istockphoto.com/id/1258142863/photo/tomatoes-isolate-on-white-background-tomato-half-isolated-tomatoes-side-view-whole-cut-slice.jpg?b=1&s=170667a&w=0&k=20&c=hFvgq7wOVkoxHR7O2KE3DDbO127FJT4Ub_NZJ6FQCTQ="
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "qtyleft": 15,
     "description": "Sweet and nutritious bananas grown in Kerala.",
     "product": "fruits",
-    "imageURL": ""
+    "imageURL": "https://media.istockphoto.com/id/1400057530/photo/bananas-isolated.jpg?b=1&s=170667a&w=0&k=20&c=uiSdjIQkTr7S4gEdW_oB_5zfFYhpfe0LP-CryQl49w4="
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "qtyleft": 30,
     "description": "Fresh, aromatic onions perfect for Indian cooking.",
     "product": "vegetables",
-    "imageURL": ""
+    "imageURL": "https://media.istockphoto.com/id/499146498/photo/red-onions.jpg?s=612x612&w=0&k=20&c=jOin68v1FekC7SqV4Tu55EZ9M3adkIyhKL8R-1qQI3I="
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "qtyleft": 5,
     "description": "Juicy and refreshing watermelons grown in Tamil Nadu.",
     "product": "fruits",
-    "imageURL": ""
+    "imageURL": "https://a-z-animals.com/media/2022/08/iStock-1214372574.jpg"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "qtyleft": 40,
     "description": "Versatile and delicious potatoes for all your cooking needs.",
     "product": "vegetables",
-    "imageURL": ""
+    "imageURL": "https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG90YXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "qtyleft": 12,
     "description": "Sweet and juicy grapes grown in Maharashtra.",
     "product": "fruits",
-    "imageURL": ""
+    "imageURL": "https://images.indianexpress.com/2021/02/grapes-1200.jpg"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "qtyleft": 20,
     "description": "Fresh, crisp cauliflower perfect for curries and stir-fries.",
     "product": "vegetables",
-    "imageURL": ""
+    "imageURL": "https://img.taste.com.au/DBCUD8iO/taste/2007/05/cauliflower-181864-2.jpg"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "qtyleft": 8,
     "description": "Delicious and nutritious pomegranates grown in Punjab.",
     "product": "fruits",
-    "imageURL": ""
+    "imageURL": "https://www.gannett-cdn.com/authoring/2012/12/04/NCDT/ghows-MO-7a35dcf7-6193-4659-83d8-fbbeb06af9b4-37258d1a.jpeg?width=660&height=547&fit=crop&format=pjpg&auto=webp"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "qtyleft": 35,
     "description": "Fresh and healthy spinach for all your cooking needs.",
     "product": "vegetables",
-    "imageURL": ""
+    "imageURL": "https://www.tastingtable.com/img/gallery/12-best-substitutes-for-spinach/l-intro-1668722550.jpg"
   },
   {
     "id": 11,
@@ -95,7 +95,8 @@
     "price": 50.0,
     "qtyleft": 18,
     "description": "Sweet and tangy oranges grown in Nagpur.",
-    "product": "fruits"
+    "product": "fruits",
+    "imageURL": "https://www.shape.com/thmb/zKT9Y0vyrmpqA-AU5Ey2nyWGpOo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oranges-promo-405093aab0a043338ee2c65f459ba441.jpg"
   },
   {
     "id": 12,
@@ -103,7 +104,8 @@
     "price": 60.0,
     "qtyleft": 8,
     "description": "Colorful and flavorful bell peppers perfect for salads and stir-fries.",
-    "product": "vegetables"
+    "product": "vegetables",
+    "imageURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WTZmUmD0kBA8qCDeVGd3WFezGQHIY60uNw&usqp=CAU"
   },
   {
     "id": 13,
@@ -111,7 +113,8 @@
     "price": 70.0,
     "qtyleft": 7,
     "description": "Juicy and tropical pineapples grown in Kerala.",
-    "product": "fruits"
+    "product": "fruits",
+    "imageURL": "https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
   },
   {
     "id": 14,
@@ -119,7 +122,8 @@
     "price": 25.0,
     "qtyleft": 20,
     "description": "Versatile and delicious eggplants for curries and roasted dishes.",
-    "product": "vegetables"
+    "product": "vegetables",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1200px-Solanum_melongena_24_08_2012_%281%29.JPG"
   },
   {
     "id": 15,
@@ -127,7 +131,8 @@
     "price": 40.0,
     "qtyleft": 12,
     "description": "Sweet and aromatic musk melons grown in Andhra Pradesh.",
-    "product": "fruits"
+    "product": "fruits",
+    "imageURL": "https://www.healthifyme.com/blog/wp-content/uploads/2020/04/Muskmelon-cover-1.jpg"
   },
   {
     "id": 16,
@@ -135,7 +140,8 @@
     "price": 45.0,
     "qtyleft": 15,
     "description": "Nutritious and flavorful broccoli for salads and stir-fries.",
-    "product": "vegetables"
+    "product": "vegetables",
+    "imageURL": "https://domf5oio6qrcr.cloudfront.net/medialibrary/5390/h1218g16207258089583.jpg"
   },
   {
     "id": 17,
@@ -143,7 +149,8 @@
     "price": 60.0,
     "qtyleft": 10,
     "description": "Tart and refreshing grapefruits grown in Tamil Nadu.",
-    "product": "fruits"
+    "product": "fruits",
+    "imageURL": "https://i.ndtvimg.com/mt/cooks/2014-11/grapefruit.jpg"
   },
   {
     "id": 18,
@@ -151,7 +158,8 @@
     "price": 20.0,
     "qtyleft": 30,
     "description": "Fresh and crunchy cabbage for salads and stir-fries.",
-    "product": "vegetables"
+    "product": "vegetables",
+    "imageURL": "https://5.imimg.com/data5/SELLER/Default/2020/12/QB/AA/WQ/21442513/cabbage-500x500.jpg"
   },
   {
     "id": 19,
@@ -159,7 +167,8 @@
     "price": 120.0,
     "qtyleft": 5,
     "description": "Sweet and juicy strawberries grown in Maharashtra.",
-    "product": "fruits"
+    "product": "fruits",
+    "imageURL": "https://media-cldnry.s-nbcnews.com/image/upload/rockcms/2022-11/strawberries-2-te-221104-dcb446.jpg"
   },
   {
     "id": 20,
@@ -167,6 +176,7 @@
     "price": 30.0,
     "qtyleft": 25,
     "description": "Fresh and crunchy green beans for salads and stir-fries.",
-    "product": "vegetables"
+    "product": "vegetables",
+    "imageURL": "https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/topic_centers/Food-Nutrition/1296x728_Green_Beans_Nutrition_Facts_and_Health_Benefits-IMAGE_1.jpg?w=1155&h=1528"
   }
 ]
