@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Mango",
+    "price": 100.0,
+    "qtyleft": 10,
+    "description": "Juicy and sweet mangoes grown in Maharashtra.",
+    "product": "fruits",
+    "imageURL": ""
+  },
+  {
+    "id": 2,
+    "name": "Tomatoes",
+    "price": 30.0,
+    "qtyleft": 25,
+    "description": "Fresh, ripe tomatoes perfect for salads and curries.",
+    "product": "vegetables",
+    "imageURL": ""
+  },
+  {
+    "id": 3,
+    "name": "Bananas",
+    "price": 40.0,
+    "qtyleft": 15,
+    "description": "Sweet and nutritious bananas grown in Kerala.",
+    "product": "fruits",
+    "imageURL": ""
+  },
+  {
+    "id": 4,
+    "name": "Onions",
+    "price": 20.0,
+    "qtyleft": 30,
+    "description": "Fresh, aromatic onions perfect for Indian cooking.",
+    "product": "vegetables",
+    "imageURL": ""
+  },
+  {
+    "id": 5,
+    "name": "Watermelon",
+    "price": 60.0,
+    "qtyleft": 5,
+    "description": "Juicy and refreshing watermelons grown in Tamil Nadu.",
+    "product": "fruits",
+    "imageURL": ""
+  },
+  {
+    "id": 6,
+    "name": "Potatoes",
+    "price": 25.0,
+    "qtyleft": 40,
+    "description": "Versatile and delicious potatoes for all your cooking needs.",
+    "product": "vegetables",
+    "imageURL": ""
+  },
+  {
+    "id": 7,
+    "name": "Grapes",
+    "price": 80.0,
+    "qtyleft": 12,
+    "description": "Sweet and juicy grapes grown in Maharashtra.",
+    "product": "fruits",
+    "imageURL": ""
+  },
+  {
+    "id": 8,
+    "name": "Cauliflower",
+    "price": 35.0,
+    "qtyleft": 20,
+    "description": "Fresh, crisp cauliflower perfect for curries and stir-fries.",
+    "product": "vegetables",
+    "imageURL": ""
+  },
+  {
+    "id": 9,
+    "name": "Pomegranate",
+    "price": 90.0,
+    "qtyleft": 8,
+    "description": "Delicious and nutritious pomegranates grown in Punjab.",
+    "product": "fruits",
+    "imageURL": ""
+  },
+  {
+    "id": 10,
+    "name": "Spinach",
+    "price": 15.0,
+    "qtyleft": 35,
+    "description": "Fresh and healthy spinach for all your cooking needs.",
+    "product": "vegetables",
+    "imageURL": ""
+  }
+]
