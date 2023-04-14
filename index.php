@@ -1,10 +1,7 @@
 <?php
 
-
+ 
 ?>
-
-<!DOCTYPE html>
-<html lang="en">
 
 
 
@@ -14,8 +11,8 @@
 <h1 class="heading">Look For the Products You Want</h1>
 <div class="wrapper">
     <div class="search-wrapper">
-        <input type="text" placeholder="Vegetables/Fruits">
-        <input type="submit" value="Search" />
+        <input type="text" placeholder="Vegetables/Fruits" class="search">
+        <input type="submit" value="Search" class="search-btn" />
     </div>
 
     <div class="cards-wrapper">

@@ -15,7 +15,6 @@ nav {
 .logo {
   width: 100px;
 }
-
 .nav-icon {
   width: 24px;
   height: 24px;
@@ -42,7 +41,7 @@ nav {
   color: #444;
   margin: 0 0 24px 0;
 }
-input[type="text"] {
+.search {
   padding: 16px;
   width: 600px;
   position: relative;
@@ -51,7 +50,7 @@ input[type="text"] {
   background-color: white;
   font-size: 16px;
 }
-input[type="submit"] {
+.search-btn {
   background-color: #fd7e14;
   border: none;
   width: 100px;
@@ -80,4 +79,8 @@ input[type="submit"] {
 }
 .card-img {
   width: 200px;
+}
+.form-input-field {
+  width: 300px;
+  padding: 0.8rem 1.6rem;
 }

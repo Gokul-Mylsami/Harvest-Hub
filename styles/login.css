@@ -1,0 +1,56 @@
+.bg-wrapper {
+  height: 100vh;
+  background-image: url("../assets/background.jpeg");
+  background-size: cover;
+}
+
+.form-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-title {
+  text-align: center;
+  color: #333;
+}
+
+.form {
+  padding: 6rem 3rem;
+  background-color: #ffe8cc;
+  border-radius: 10px;
+}
+
+.input-field-cotainer {
+  margin-top: 1rem;
+}
+
+.input-field-cotainer input {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+}
+
+.submit-btn {
+  width: 300px !important;
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #fd7e14;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.form-link {
+  font-size: 14px;
+  margin-top: 15px;
+  text-align: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .form {
+    padding: 2rem 1rem;
+  }
+}
