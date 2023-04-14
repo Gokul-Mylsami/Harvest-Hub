@@ -88,5 +88,85 @@
     "description": "Fresh and healthy spinach for all your cooking needs.",
     "product": "vegetables",
     "imageURL": ""
+  },
+  {
+    "id": 11,
+    "name": "Oranges",
+    "price": 50.0,
+    "qtyleft": 18,
+    "description": "Sweet and tangy oranges grown in Nagpur.",
+    "product": "fruits"
+  },
+  {
+    "id": 12,
+    "name": "Bell Peppers",
+    "price": 60.0,
+    "qtyleft": 8,
+    "description": "Colorful and flavorful bell peppers perfect for salads and stir-fries.",
+    "product": "vegetables"
+  },
+  {
+    "id": 13,
+    "name": "Pineapple",
+    "price": 70.0,
+    "qtyleft": 7,
+    "description": "Juicy and tropical pineapples grown in Kerala.",
+    "product": "fruits"
+  },
+  {
+    "id": 14,
+    "name": "Eggplant",
+    "price": 25.0,
+    "qtyleft": 20,
+    "description": "Versatile and delicious eggplants for curries and roasted dishes.",
+    "product": "vegetables"
+  },
+  {
+    "id": 15,
+    "name": "Musk Melon",
+    "price": 40.0,
+    "qtyleft": 12,
+    "description": "Sweet and aromatic musk melons grown in Andhra Pradesh.",
+    "product": "fruits"
+  },
+  {
+    "id": 16,
+    "name": "Broccoli",
+    "price": 45.0,
+    "qtyleft": 15,
+    "description": "Nutritious and flavorful broccoli for salads and stir-fries.",
+    "product": "vegetables"
+  },
+  {
+    "id": 17,
+    "name": "Grapfruit",
+    "price": 60.0,
+    "qtyleft": 10,
+    "description": "Tart and refreshing grapefruits grown in Tamil Nadu.",
+    "product": "fruits"
+  },
+  {
+    "id": 18,
+    "name": "Cabbage",
+    "price": 20.0,
+    "qtyleft": 30,
+    "description": "Fresh and crunchy cabbage for salads and stir-fries.",
+    "product": "vegetables"
+  },
+  {
+    "id": 19,
+    "name": "Strawberries",
+    "price": 120.0,
+    "qtyleft": 5,
+    "description": "Sweet and juicy strawberries grown in Maharashtra.",
+    "product": "fruits"
+  },
+  {
+    "id": 20,
+    "name": "Green Beans",
+    "price": 30.0,
+    "qtyleft": 25,
+    "description": "Fresh and crunchy green beans for salads and stir-fries.",
+    "product": "vegetables"
   }
 ]
