@@ -10,6 +10,7 @@
 
 <body>
   <?php include('templates/navbar.php'); ?>
+
 </body>
 
 </html>
