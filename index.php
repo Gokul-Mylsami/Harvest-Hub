@@ -1,3 +1,7 @@
+<?php
+echo "Hi";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,6 +11,6 @@
     <title>HarvestHub</title>
   </head>
   <body>
-    <h1>Hello</h1>
+    <h1></h1>
   </body>
 </html>
