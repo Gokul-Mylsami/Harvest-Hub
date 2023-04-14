@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  my-php-app:
+    build: ./
+    volumes:
+      - /Users/gokul-mylsami/Desktop/CSI-Task/:/var/www/html/
+    ports:
+      - "8000:80"
+
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: password123
+      MYSQL_DATABASE: harvesthub
+      MYSQL_PASSWORD: password123
+    ports:
+      - "3306:3306"
