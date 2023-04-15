@@ -8,7 +8,8 @@ $response = array(
     'message' => '',
 );
 
-$_userEmail = 'abc@gmail.com';
+session_start();
+$_userEmail = $_SESSION['email'];
 
 $products = array();
 $sql = "SELECT * FROM products";
@@ -43,11 +44,13 @@ if(isset($_POST['action']) && $_POST['action'] === 'get'){
         }
         $response['status'] = 'success';
         $response['status_code'] = '200';
+        $response['user'] = $_SESSION['email'];
         $response['message'] = 'Cart items fetched successfully';
         $response['data'] = $data;
     } else {
         $response['status'] = 'error';
         $response['status_code'] = '404';
+        $response['user'] = $_SESSION['email'];
         $response['message'] = 'No cart items found';
     }
 }
@@ -87,11 +90,11 @@ if(isset($_POST['action']) && $_POST['action'] === 'add'){
                 'qtyleft' => $product['qtyleft'],
                 'quantity' => 1,
             );
-
+            $_SESSION['cartitems'] = $user_products;
             $response['status'] = 'success';
             $response['status_code'] = '200';
             $response['message'] = 'Cart items added successfully';
-            $response['data'] = $data;
+            $response['data'] = $user_products;
         } else {
             $response['status'] = 'error';
             $response['status_code'] = '500';
@@ -123,6 +126,7 @@ if(isset($_POST['action']) && $_POST['action'] === 'add'){
 
         //update the user table cart items to [{id:1,noOfProducts:1}]
         $sql = "UPDATE user SET cartitems = '$cartitems' WHERE email = '$_userEmail'";
+        $_SESSION['cartitems'] = $cartitems;
         $result = mysqli_query($conn, $sql);
         if($result){
             $response['status'] = 'success';
@@ -135,6 +139,7 @@ if(isset($_POST['action']) && $_POST['action'] === 'add'){
             $response['message'] = 'Cart items could not be added';
             $response['data'] = $cartitems;
         }
+
     }
 }
 
