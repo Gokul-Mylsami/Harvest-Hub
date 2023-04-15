@@ -99,7 +99,12 @@ gap: 10px;
 }
 
 @media only screen and (max-width: 650px) {
-    input[type="text"] {
+    .search {
     width: 400px;
     }
+}
+
+.form-input-field {
+  width: 300px;
+  padding: 0.8rem 1.6rem;
 }
