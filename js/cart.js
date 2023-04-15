@@ -3,20 +3,21 @@ let cartItems;
 const itemsWrapper = document.querySelector(".items-wrapper");
 const getCartItems = async () => {
   let formData = { action: "get" };
-  $.ajax({
-    type: "POST",
-    url: "../php/cart.php",
-    data: formData,
-    success: function(response) {
-      let data = JSON.parse(response);
-      console.log(data);
-      cartItems = data;
-    
-      //   upadateUI(data.data);
-    },
-    error: function(jqXHR, textStatus, errorThrown) {
-      console.log(errorThrown);
-    },
+  return new Promise((resolve, reject) => {
+    $.ajax({
+      type: "POST",
+      url: "../php/cart.php",
+      data: formData,
+      success: function (response) {
+        let data = JSON.parse(response);
+        console.log(data);
+        resolve(data);
+      },
+      error: function (jqXHR, textStatus, errorThrown) {
+        console.log(errorThrown);
+        reject(errorThrown);
+      },
+    });
   });
 };
 
@@ -54,9 +55,8 @@ const displayData = (data) => {
   });
 };
 const renderData = async () => {
-  const data = await getCartItems();
-  // displayData(data.data);
-  console.log(cartItems);
+  let data = await getCartItems();
+  console.log(data);
 };
 
 const upadateUI = (data) => {};
