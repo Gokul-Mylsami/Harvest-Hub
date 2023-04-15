@@ -3,7 +3,7 @@ services:
   my-php-app:
     build: ./
     volumes:
-      - C:\Users\chand\Desktop\STUDIES\Projects\CSI-Task\:/var/www/html/
+      - /Users/gokul-mylsami/Desktop/CSI-Task/:/var/www/html/
     ports:
       - "8000:80"
 
