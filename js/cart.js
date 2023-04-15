@@ -11,7 +11,8 @@ const getCartItems = async () => {
       data: formData,
       success: function(response) {
         let data = JSON.parse(response);
-        console.log(data);
+        cartItems=data.data;
+        
         resolve(data);
       },
       error: function(jqXHR, textStatus, errorThrown) {
@@ -22,6 +23,14 @@ const getCartItems = async () => {
   });
 };
 
+function increaseItems(itemId){
+    console.log(cartItems);
+    const item = cartItems.find(item => item.id === itemId);
+    console.log(item);
+    item.quantity += 1;
+    const quantityElement = document.querySelector(`${itemId}`);
+    quantityElement.textContent = item.quantity;
+}
 const displayData = (data) => {
   data.map((item) => {
     cost=cost+ (item.quantity * item.price);
@@ -31,7 +40,7 @@ const displayData = (data) => {
 <div class="prod-details-col">
     <img src='${item.image}' class="prod-img"/>
       <div class="prod-details">
-                    <p class="prod-name">${item.name}</p>
+                    <p class="prod-name" >${item.name}</p>
                     <p class="prod-desc">
                       ${item.description}
                     </p>
@@ -41,8 +50,8 @@ const displayData = (data) => {
               </td>
 <td class="tab-col">
                 <div class="quantity-col">
-                  <button>+</button>
-                  <p>${item.quantity}</p>
+                  <button onclick="increaseItems('${item.id}')">+</button>
+                  <p id='${item.id}'>${item.quantity}</p>
                   <button>-</button>
                 </div>
               </td>
