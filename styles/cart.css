@@ -2,15 +2,21 @@
   width: 1200px;
   margin: 0 auto;
   margin-top: 1rem;
+  
 }
 .line {
   border-bottom: 1px solid #e1e1e1;
   margin: 1rem 0;
 }
+
+.table{
+overflow-x:auto;
+}
 .thead {
   font-weight: normal;
   color: #999;
   text-align: left;
+  padding-bottom: 1rem;
 }
 
 .prod-des-col {
@@ -27,6 +33,7 @@
   width: 100px;
   height: 100px;
   object-fit: cover;
+  margin-bottom: 1em;
 }
 
 .prod-name {
@@ -36,6 +43,8 @@
 
 .prod-row {
   color: #555;
+  padding-bottom: 10px;
+
 }
 .prod-details-col {
   width: 500px;
@@ -72,6 +81,19 @@
 .tab-col {
   width: 200px;
 }
-.t-foot {
-  margin-top: 2rem;
+
+
+
+.checkout-btn{
+  width: 100px;
+  padding:1rem;
+  background-color: #fd7e14;
+  border: none;
+  font-weight: bold;
+  color: white;
+  border-radius: 5px;
+  margin-top: 20px;
+  cursor: pointer;
 }
+
+
