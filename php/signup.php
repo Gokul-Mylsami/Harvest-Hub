@@ -21,7 +21,7 @@ if (mysqli_num_rows($result) > 0) {
 }
 
 //hash the password
-$password = hash('sha256', $password);
+// $password = password_hash($password, PASSWORD_DEFAULT);
 
 // Insert the data into the database
 $sql = "INSERT INTO user (name, email, password) VALUES ('$name', '$email', '$password')";
