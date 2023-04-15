@@ -80,10 +80,10 @@
         <div class="card">
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
-            <p>Pine Apple</p>
-            <p>100</p>
-            <p>10kg left</p>
-            <p>Juicy and sweet pineapple grown in Maharashtra.</p>
+            <p class="product-title">Pine Apple</p>
+            <p class="product-price">	&#8377 100</p>
+            <p class="product-left">10kg left</p>
+            <p class="description">Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
 
         <!-- card 8 -->
@@ -92,7 +92,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -100,7 +100,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -108,7 +108,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -116,7 +116,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -124,7 +124,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -132,7 +132,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -140,7 +140,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
@@ -148,7 +148,7 @@
             <img src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
                 class="card-img" alt="product image" />
             <p>Pine Apple</p>
-            <p>100</p>
+            <p>	&#8377 100</p>
             <p>10kg left</p>
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
