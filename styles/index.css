@@ -80,28 +80,27 @@ nav {
 .card-img {
   width: 200px;
 }
-.product-title{
-font-weight: bold;
+.product-name {
+  font-weight: bold;
 }
 
-.product-price{
-color: #ff922b;
+.product-price {
+  color: #ff922b;
 }
 
 @media only screen and (max-width: 750px) {
-.search-wrapper {
-  display: flex;
-flex-direction: column;
-align-items: center;
-gap: 10px;
-}
-
+  .search-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 }
 
 @media only screen and (max-width: 650px) {
-    .search {
+  .search {
     width: 400px;
-    }
+  }
 }
 
 .form-input-field {
