@@ -1,7 +1,7 @@
 <?php 
     include('../utils/connect_db.php');
     $email = $_POST['email'];
-    $password = $_POST['password'];
+    $user_password = $_POST['password'];
 
     $sql = "SELECT * FROM user WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
@@ -12,7 +12,7 @@
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);;
 
-        if($password === $row['password']){
+        if($user_password === $row['password']){
             $response = array(
                 'status' => 'success',
                 "status_code" => "200",

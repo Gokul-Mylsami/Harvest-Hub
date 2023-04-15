@@ -142,10 +142,5 @@ if(isset($_POST['action']) && $_POST['action'] === 'add'){
 
     }
 }
-
-
 echo json_encode($response);
-
-
-
 ?>

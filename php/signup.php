@@ -2,7 +2,7 @@
 // Retrieve the data sent from the client-side using $_POST
 $name = $_POST['name'];
 $email = $_POST['email'];
-$password = $_POST['password'];
+$user_password = $_POST['password'];
 
 // Connect to the database
 include('../utils/connect_db.php');
@@ -24,7 +24,7 @@ if (mysqli_num_rows($result) > 0) {
 // $password = password_hash($password, PASSWORD_DEFAULT);
 
 // Insert the data into the database
-$sql = "INSERT INTO user (name, email, password) VALUES ('$name', '$email', '$password')";
+$sql = "INSERT INTO user (name, email, password) VALUES ('$name', '$email', '$user_password')";
 if(mysqli_query($conn, $sql))
 {
     $response = array(
