@@ -53,6 +53,22 @@
   text-align: right;
 }
 
+.error-msg-container {
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #ffc9c9;
+  text-align: center;
+  color: #e03131;
+}
+
+.success-msg-container {
+  margin-bottom: 1rem;
+  padding: 0.6rem 1rem;
+  background-color: #c9ffc9;
+  text-align: center;
+  color: #2f9e44;
+}
+
 @media only screen and (max-width: 600px) {
   .form {
     padding: 2rem 1rem;
