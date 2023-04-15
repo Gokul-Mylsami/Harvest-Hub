@@ -20,6 +20,7 @@ nav {
   font-size: 1.5rem;
   font-weight: 800;
   color: #fd7e14;
+  /* display: none; */
 }
 .logo-container {
   display: flex;
@@ -35,6 +36,12 @@ nav {
   align-items: center;
   justify-content: flex-end;
   gap: 32px;
+}
+.cart-icon{
+  cursor: pointer;
+}
+.logout-icon{
+  cursor: pointer;
 }
 .wrapper {
   display: flex;
@@ -147,8 +154,11 @@ nav {
   }
 }
 
-
-
+@media only screen and (max-width: 600px) {
+    .logo-title{
+      display: none;
+}
+}
 .form-input-field {
   width: 300px;
   padding: 0.8rem 1.6rem;

@@ -12,6 +12,12 @@
       rel="stylesheet"
     />
     <title>HarvestHub</title>
+
+<script>
+  function redirectToCart() {
+    window.location.href = "cart.html";
+  }
+</script>
   </head>
   <body>
     <nav>
@@ -22,7 +28,7 @@
 
       <div class="details">
         <p>Name</p>
-        <div title="Cart">
+        <div title="Cart" onclick=redirectToCart() class="cart-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -39,7 +45,7 @@
           </svg>
         </div>
 
-        <div title="Logout">
+        <div title="Logout" class="logout-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

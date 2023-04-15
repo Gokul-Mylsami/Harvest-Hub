@@ -1,16 +1,16 @@
 .cart-section {
-  width: 1200px;
+  width: 90%;
   margin: 0 auto;
   margin-top: 1rem;
-  
 }
 .line {
   border-bottom: 1px solid #e1e1e1;
   margin: 1rem 0;
+  width: 60%;
 }
 
-.table{
-overflow-x:auto;
+.table {
+  overflow-x: auto;
 }
 .thead {
   font-weight: normal;
@@ -44,7 +44,6 @@ overflow-x:auto;
 .prod-row {
   color: #555;
   padding-bottom: 10px;
-
 }
 .prod-details-col {
   width: 500px;
@@ -82,11 +81,9 @@ overflow-x:auto;
   width: 200px;
 }
 
-
-
-.checkout-btn{
+.checkout-btn {
   width: 100px;
-  padding:1rem;
+  padding: 1rem;
   background-color: #fd7e14;
   border: none;
   font-weight: bold;
@@ -96,4 +93,9 @@ overflow-x:auto;
   cursor: pointer;
 }
 
-
+.table-wrapper {
+  width: 90% !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  white-space: nowrap;
+}
