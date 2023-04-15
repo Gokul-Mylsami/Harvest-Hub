@@ -1,6 +1,14 @@
 const loader = document.querySelector(".loading-container");
 const content = document.querySelector(".content");
 const cardsWrapper = document.querySelector(".cards-wrapper");
+const searchBtn = document.querySelector(".search-btn");
+const search = document.querySelector(".search");
+let products = [];
+
+searchBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  searchProduct();
+});
 
 const fetchData = async () => {
   content.style.display = "none";
@@ -9,8 +17,23 @@ const fetchData = async () => {
   const data = await response.json();
   loader.style.display = "none";
   content.style.display = "block";
-
+  products = data.data;
+  console.log(products);
   return data;
+};
+
+const searchProduct = () => {
+  console.log("searching");
+  const searchKeyword = search.value;
+
+  const filteredProducts = products.filter((product) => {
+    const regex = new RegExp(searchKeyword, "gi");
+    return product.name.match(regex);
+  });
+
+  console.log(filteredProducts);
+  cardsWrapper.innerHTML = "";
+  displayData(filteredProducts);
 };
 
 const addToCart = async (id, name) => {
@@ -80,7 +103,7 @@ const addCartItems = async (productId, productName) => {
     success: function (response) {
       let data = JSON.parse(response);
       console.log(data);
-      //   upadateUI(data.data);
+      showNotification(data.message, data.status);
     },
     error: function (jqXHR, textStatus, errorThrown) {
       console.log(errorThrown);
