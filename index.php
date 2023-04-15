@@ -1,6 +1,5 @@
 <?php
-
- 
+    
 ?>
 
 
@@ -150,6 +149,8 @@
             <p>Juicy and sweet pineapple grown in Maharashtra.</p>
         </div>
     </div>
+
+
 </div>
 
 </body>

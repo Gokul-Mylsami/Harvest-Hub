@@ -8,6 +8,7 @@ if(isset($_POST['submit'])){
     echo $name." ".$email." ".$password;
 }
 
+
 ?>
 
 <!DOCTYPE html>
