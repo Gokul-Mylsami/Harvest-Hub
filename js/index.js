@@ -61,17 +61,32 @@ const displayData = (data) => {
       const productName = event.target.parentNode.querySelector(".product-name")
         .innerText;
       console.log("Product added to cart:", productId, productName);
-      addToCart(productId, productName);
+      addCartItems(productId, productName);
     });
   });
 };
 
 const renderData = async () => {
   const data = await fetchData();
-  console.log(data.data);
   displayData(data.data);
 };
 
+const addCartItems = async (productId, productName) => {
+  let formData = { action: "add", id: productId, name: productName };
+  $.ajax({
+    type: "POST",
+    url: "../php/cart.php",
+    data: formData,
+    success: function (response) {
+      let data = JSON.parse(response);
+      console.log(data);
+      //   upadateUI(data.data);
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+      console.log(errorThrown);
+    },
+  });
+};
 renderData();
 
 function showNotification(message, status) {
