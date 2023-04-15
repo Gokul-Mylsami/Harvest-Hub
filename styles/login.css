@@ -53,20 +53,24 @@
   text-align: right;
 }
 
-.error-msg-container {
+.msg-container {
   margin-bottom: 1rem;
   padding: 0.6rem 1rem;
-  background-color: #ffc9c9;
   text-align: center;
-  color: #e03131;
+  transition: ease-in-out 1s;
+  display: none;
 }
 
-.success-msg-container {
-  margin-bottom: 1rem;
-  padding: 0.6rem 1rem;
+.success {
+  display: block;
   background-color: #c9ffc9;
-  text-align: center;
   color: #2f9e44;
+}
+
+.error {
+  display: block;
+  background-color: #ffc9c9;
+  color: #e03131;
 }
 
 @media only screen and (max-width: 600px) {

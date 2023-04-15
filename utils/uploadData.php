@@ -1,6 +1,3 @@
-<!-- products : id(pk), name, price, qtyleft, description,image  -->
-<!--  -->
-<!-- user : name, password, email(pk), cartitems [{id:product_id,noOfProduct:2}] -->
 <?php
 
 // connect to the database
@@ -18,21 +15,21 @@ $sql = "CREATE TABLE IF NOT EXISTS products (
 if (mysqli_query($conn, $sql)) {
     echo "Table products created successfully";
 } else {
-    die("Error creating table: " . mysqli_error($conn));
+    die("Error creating Prod table: " . mysqli_error($conn));
 }
 
 $sql = "CREATE TABLE IF NOT EXISTS user (
     name VARCHAR(255) NOT NULL,
     password VARCHAR(255) NOT NULL,
     email VARCHAR(255) NOT NULL PRIMARY KEY,
-    cartitems VARCHAR(255) NOT NULL
+    cartitems VARCHAR(255)
 )";
 
 
 if (mysqli_query($conn, $sql)) {
     echo "Table Users created successfully";
 } else {
-    die("Error creating table: " . mysqli_error($conn));
+    die("Error creating User table: " . mysqli_error($conn));
 }
 
 $sql = "DELETE FROM products";

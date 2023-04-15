@@ -12,22 +12,22 @@
       href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
       rel="stylesheet"
     />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Login</title>
   </head>
   <body>
     <div class="bg-wrapper">
       <div class="form-container">
-        <form action="" class="form">
-          <!-- <div class="error-msg-container">
-                    <p class="error-msg">Error Message</p>
-                </div>
-                <div class="success-msg-container">
-                    <p class="success-msg">Success Message</p>
-                </div> -->
+        <form action="" class="form" id="form">
+          <div class="msg-container">
+            <p class="msg">Error Message</p>
+          </div>
           <h1 class="login-title">Log in</h1>
           <div class="input-field-cotainer">
             <input
               type="email"
+              id="email"
               class="form-input-field"
               placeholder="Email"
               required
@@ -36,6 +36,7 @@
           <div class="input-field-cotainer">
             <input
               type="password"
+              id="password"
               class="form-input-field"
               placeholder="Password"
               required

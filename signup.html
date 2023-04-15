@@ -8,23 +8,23 @@
 
     <link rel="stylesheet" href="./styles/login.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="bg-wrapper">
       <div class="form-container">
-        <form class="form" method="POST">
-          <!-- <div class="error-msg-container">
-                    <p class="error-msg">Error Message</p>
-                </div>
-                <div class="success-msg-container">
-                    <p class="success-msg">Success Message</p>
-                </div> -->
+        <form class="form" method="POST" id="form">
+          <div class="msg-container">
+            <p class="msg">Error Message</p>
+          </div>
           <h1 class="login-title">Sign up</h1>
           <div class="input-field-cotainer">
             <input
               type="name"
               name="name"
+              id="name"
               class="form-input-field"
               placeholder="Name"
               required
@@ -34,6 +34,7 @@
             <input
               type="email"
               name="email"
+              id="email"
               class="form-input-field"
               placeholder="Email"
               required
@@ -43,6 +44,7 @@
             <input
               type="password"
               name="password"
+              id="password"
               class="form-input-field"
               placeholder="Password"
               required
