@@ -1,38 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+  <head lang="en">
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles\index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Rubik&amp;display=swap"
       rel="stylesheet"
     />
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>HarvestHub</title>
 
-<script>
-  function redirectToCart() {
-    window.location.href = "cart.html";
-  }
-</script>
+    <script>
+      function redirectToCart() {
+        window.location.href = "cart.html";
+      }
+    </script>
   </head>
   <body>
     <nav>
       <div class="logo-container">
-        <img src="assets\logo.png" class="logo" />
+        <img src="assets/logo.png" class="logo" alt="logo" />
         <h1 class="logo-title">HarvestHub</h1>
       </div>
-
       <div class="details">
         <p>Name</p>
-        <div title="Cart" onclick=redirectToCart() class="cart-icon">
+        <div title="Cart" onclick="redirectToCart()" class="cart-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 24 24"
+            viewbox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
             class="nav-icon"
@@ -41,15 +42,14 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
-            />
+            ></path>
           </svg>
         </div>
-
         <div title="Logout" class="logout-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
-            viewBox="0 0 24 24"
+            viewbox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
             class="nav-icon"
@@ -58,293 +58,27 @@
               stroke-linecap="round"
               stroke-linejoin="round"
               d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
-            />
+            ></path>
           </svg>
         </div>
       </div>
     </nav>
-    <h1 class="heading">Look For the Products You Want</h1>
-    <div class="wrapper">
-      <div class="search-wrapper">
-        <input type="text" placeholder="Vegetables/Fruits" class="search" />
-        <input type="submit" value="Search" class="search-btn" />
-      </div>
-
-      <div class="cards-wrapper">
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://a-z-animals.com/media/2022/08/iStock-1214372574.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-
-        <!-- card 2 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://media.istockphoto.com/id/1400057530/photo/bananas-isolated.jpg?b=1&s=170667a&w=0&k=20&c=uiSdjIQkTr7S4gEdW_oB_5zfFYhpfe0LP-CryQl49w4="
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-
-        <!-- card 3 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://media.istockphoto.com/id/499146498/photo/red-onions.jpg?s=612x612&w=0&k=20&c=jOin68v1FekC7SqV4Tu55EZ9M3adkIyhKL8R-1qQI3I="
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <!-- card 4 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://images.unsplash.com/photo-1518977676601-b53f82aba655?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cG90YXRvfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <!-- card 5 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://img.taste.com.au/DBCUD8iO/taste/2007/05/cauliflower-181864-2.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-
-        <!-- card 6 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://www.gannett-cdn.com/authoring/2012/12/04/NCDT/ghows-MO-7a35dcf7-6193-4659-83d8-fbbeb06af9b4-37258d1a.jpeg?width=660&height=547&fit=crop&format=pjpg&auto=webp"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-
-        <!-- card 7 -->
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://www.shape.com/thmb/zKT9Y0vyrmpqA-AU5Ey2nyWGpOo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/oranges-promo-405093aab0a043338ee2c65f459ba441.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-
-        <!-- card 8 -->
-
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4WTZmUmD0kBA8qCDeVGd3WFezGQHIY60uNw&usqp=CAU"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://www.verywellhealth.com/thmb/089YGjEJZsHbJHnE0n0rwd8GPQg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-126551980-1--579a411c3df78c32762c9180.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://a-z-animals.com/media/2022/08/iStock-1214372574.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://a-z-animals.com/media/2022/08/iStock-1214372574.jpg"
-              class="card-img"
-              alt="product image"
-            />
-
-            <p class="product-name">Pine Apple</p>
-            <p class="product-price">&#8377 100</p>
-            <p class="product-left">10kg left</p>
-            <p class="description">
-              Juicy and sweet pineapple grown in Maharashtra.
-            </p>
-            <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://a-z-animals.com/media/2022/08/iStock-1214372574.jpg"
-              class="card-img"
-              alt="product image"
-            />
-            
-              <p class="product-name">Pine Apple</p>
-              <p class="product-price">&#8377 100</p>
-              <p class="product-left">10kg left</p>
-              <p class="description">
-                Juicy and sweet pineapple grown in Maharashtra.
-              </p>
-              <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-            
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1200px-Solanum_melongena_24_08_2012_%281%29.JPG"
-              class="card-img"
-              alt="product image"
-            />
-            
-              <p class="product-name">Pine Apple</p>
-              <p class="product-price">&#8377 100</p>
-              <p class="product-left">10kg left</p>
-              <p class="description">
-                Juicy and sweet pineapple grown in Maharashtra.
-              </p>
-              <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-            
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://www.tastingtable.com/img/gallery/12-best-substitutes-for-spinach/l-intro-1668722550.jpg"
-              class="card-img"
-              alt="product image"
-            />
-            
-              <p class="product-name">Pine Apple</p>
-              <p class="product-price">&#8377 100</p>
-              <p class="product-left">10kg left</p>
-              <p class="description">
-                Juicy and sweet pineapple grown in Maharashtra.
-              </p>
-              <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-            
-          </div>
-        </div>
-        <div class="card">
-          <div class="content-wrapper">
-            <img
-              src="https://images.indianexpress.com/2021/02/grapes-1200.jpg"
-              class="card-img"
-              alt="product image"
-            />
-            
-              <p class="product-name">Pine Apple</p>
-              <p class="product-price">&#8377 100</p>
-              <p class="product-left">10kg left</p>
-              <p class="description">
-                Juicy and sweet pineapple grown in Maharashtra.
-              </p>
-              <input type="submit" value="Add to Cart" class="add-to-cart-btn" />
-            
-          </div>
-        </div>
+    <!-- Loading -->
+    <div class="loading-container">
+      <div class="loading">
+        <div class="loader"></div>
       </div>
     </div>
+    <div class="content">
+      <h1 class="heading">Look For the Products You Want</h1>
+      <div class="wrapper">
+        <div class="search-wrapper">
+          <input type="text" placeholder="Vegetables/Fruits" class="search" />
+          <input type="submit" value="Search" class="search-btn" />
+        </div>
+        <div class="cards-wrapper"></div>
+      </div>
+      <script src="./js/index.js" defer></script>
+    </div>
   </body>
-  <script src="./js/index.js" defer></script>
 </html>

@@ -5,7 +5,7 @@ $email = $_POST['email'];
 $password = $_POST['password'];
 
 // Connect to the database
-include_once('../utils/connect_db.php');
+include('../utils/connect_db.php');
 
 // Check if the email already exists in the database
 $sql = "SELECT * FROM user WHERE email = '$email'";

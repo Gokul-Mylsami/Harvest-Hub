@@ -1,17 +1,11 @@
 <?php 
-    include_once '../utils/connect_db.php';
+    include('../utils/connect_db.php');
     $email = $_POST['email'];
     $password = $_POST['password'];
     $sql = "SELECT * FROM user WHERE email = '$email'";
     $result = mysqli_query($conn, $sql);
 
-    
-
-    //session
     session_start();
-    //verify password hash_password
-
-    
     
     if (mysqli_num_rows($result) > 0) {
         $row = mysqli_fetch_assoc($result);
@@ -19,8 +13,7 @@
         $hashed_input_password = hash('sha256', $password);
         $hash_password = $row['password'];
 
-
-
+        
         if($hashed_input_password == $hash_password){
             $response = array(
                 'status' => 'success',

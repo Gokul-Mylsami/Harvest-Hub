@@ -67,9 +67,17 @@
   color: #2f9e44;
 }
 
+.success p {
+  color: #2f9e44;
+}
+
 .error {
   display: block;
   background-color: #ffc9c9;
+  color: #e03131;
+}
+
+.error p {
   color: #e03131;
 }
 
