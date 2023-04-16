@@ -20,6 +20,7 @@
                 'user' => $row['email']
             );
             $_SESSION['email'] = $row['email'];
+            $_SESSION['user'] = $row['name'];
         } else {
             $response = array(
                 'status' => 'error',

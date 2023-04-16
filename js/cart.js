@@ -23,6 +23,18 @@ const getCartItems = async () => {
   });
 };
 
+const validateSession = async () => {
+  const response = await fetch("../php/validateSession.php");
+  const data = await response.json();
+  console.log(data);
+  if (data.status !== "success") {
+    window.location.href = "../login.html";
+  } else {
+    console.log("session validated");
+    document.querySelector(".username").innerText = data.user;
+  }
+};
+
 const increaseItems = (id) => {
   cost = 0;
   cartItems.forEach((item) => {
@@ -56,12 +68,14 @@ const decreaseItems = (id) => {
 };
 
 const displayData = (data) => {
+  cost = 0;
   itemsWrapper.innerHTML = "";
   if (data.length == 0) {
     itemsWrapper.innerHTML = `<tr><td colspan="4" style="text-align: center; font-size: 20px; font-weight: 600;">No items in cart</td></tr>`;
     return;
   }
   data.map((item) => {
+    cost += item.quantity * item.price;
     let template = `<tr class="prod-row" key=${item.id}>
           <td class="tab-col">
             <div class="prod-details-col">
@@ -182,6 +196,7 @@ const deleteData = async (id) => {
 };
 
 const renderData = async () => {
+  validateSession();
   let data = await getCartItems();
   displayData(data.data);
 };
