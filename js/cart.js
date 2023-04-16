@@ -1,3 +1,14 @@
+const logutBtn = document.querySelector(".logout-icon");
+
+logutBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
+  const response = await fetch("../php/logout.php");
+  const data = await response.json();
+  if (data.status === "success") {
+    window.location.href = "../login.html";
+  }
+});
+
 let cartItems;
 let cost = 0;
 const itemsWrapper = document.querySelector(".items-wrapper");

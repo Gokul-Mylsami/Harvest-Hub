@@ -34,6 +34,7 @@ const sendRequest = async () => {
         name.value = "";
         email.value = "";
         password.value = "";
+        window.location.href = "../login.html";
       } else {
         showMessage(res.message, "error");
       }
