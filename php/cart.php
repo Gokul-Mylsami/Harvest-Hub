@@ -142,5 +142,25 @@ if(isset($_POST['action']) && $_POST['action'] === 'add'){
 
     }
 }
+
+if(isset($_POST['action']) && $_POST['action'] === 'update')
+{
+    $data = json_encode($_POST['data']);
+    $sql = "UPDATE user SET cartitems = '$data' WHERE email = '$_userEmail'";
+    $result = mysqli_query($conn, $sql);
+
+    if($result){
+        $response['status'] = 'success';
+        $response['status_code'] = '200';
+        $response['message'] = 'Cart items updated successfully';
+        $response['data'] = $data;
+        $_SESSION['cartitems'] = $data;
+    }else{
+        $response['status'] = 'error';
+        $response['status_code'] = '500';
+        $response['message'] = 'Cart items could not be updated';
+    }
+}
+
 echo json_encode($response);
 ?>

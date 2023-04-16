@@ -1,16 +1,59 @@
 const loader = document.querySelector(".loading-container");
 const content = document.querySelector(".content");
 const cardsWrapper = document.querySelector(".cards-wrapper");
+const searchBtn = document.querySelector(".search-btn");
+const search = document.querySelector(".search");
+const logutBtn = document.querySelector(".logout-icon");
+
+let products = [];
+
+logutBtn.addEventListener("click", async (event) => {
+  event.preventDefault();
+  const response = await fetch("../php/logout.php");
+  const data = await response.json();
+  if (data.status === "success") {
+    window.location.href = "../login.html";
+  }
+});
+
+searchBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+  searchProduct();
+});
 
 const fetchData = async () => {
-  content.style.display = "none";
-  loader.style.display = "block";
   const response = await fetch("../php/index.php");
   const data = await response.json();
-  loader.style.display = "none";
-  content.style.display = "block";
 
+  products = data.data;
+  console.log(products);
   return data;
+};
+
+const validateSession = async () => {
+  const response = await fetch("../php/validateSession.php");
+  const data = await response.json();
+  console.log(data);
+  if (data.status !== "success") {
+    window.location.href = "../login.html";
+  } else {
+    console.log("session validated");
+    document.querySelector(".username").innerText = data.user;
+  }
+};
+
+const searchProduct = () => {
+  console.log("searching");
+  const searchKeyword = search.value;
+
+  const filteredProducts = products.filter((product) => {
+    const regex = new RegExp(searchKeyword, "gi");
+    return product.name.match(regex);
+  });
+
+  console.log(filteredProducts);
+  cardsWrapper.innerHTML = "";
+  displayData(filteredProducts);
 };
 
 const addToCart = async (id, name) => {
@@ -67,8 +110,15 @@ const displayData = (data) => {
 };
 
 const renderData = async () => {
+  content.style.display = "none";
+  loader.style.display = "block";
+
+  validateSession();
   const data = await fetchData();
   displayData(data.data);
+
+  loader.style.display = "none";
+  content.style.display = "block";
 };
 
 const addCartItems = async (productId, productName) => {
@@ -80,7 +130,7 @@ const addCartItems = async (productId, productName) => {
     success: function (response) {
       let data = JSON.parse(response);
       console.log(data);
-      //   upadateUI(data.data);
+      showNotification(data.message, data.status);
     },
     error: function (jqXHR, textStatus, errorThrown) {
       console.log(errorThrown);

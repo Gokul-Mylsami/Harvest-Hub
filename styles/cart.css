@@ -6,7 +6,6 @@
 .line {
   border-bottom: 1px solid #e1e1e1;
   margin: 1rem 0;
-  width: 60%;
 }
 
 .table {
@@ -50,7 +49,6 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  justify-content: space-between;
   margin-right: 3rem;
 }
 .prod-details {
