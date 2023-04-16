@@ -20,12 +20,14 @@
         window.location.href = "cart.html";
       }
 
-      
+      function redirectToHome() {
+        window.location.href = "index.html";
+      }
     </script>
   </head>
   <body>
     <nav>
-      <div class="logo-container">
+      <div class="logo-container" onclick="redirectToHome()">
         <img src="assets/logo.png" class="logo" alt="logo" />
         <h1 class="logo-title">HarvestHub</h1>
       </div>
@@ -47,7 +49,7 @@
             ></path>
           </svg>
         </div>
-        <div title="Logout" class="logout-icon" >
+        <div title="Logout" class="logout-icon">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
