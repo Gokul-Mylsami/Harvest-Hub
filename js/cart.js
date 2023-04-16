@@ -121,7 +121,7 @@ const displayData = (data) => {
 `;
     itemsWrapper.innerHTML += template;
   });
-  price.innerHTML = `<td>${cost}</td>`;
+  price.innerHTML = `<td>₹ ${cost}</td>`;
 
   document.querySelectorAll(".plus-qty").forEach((button) => {
     button.addEventListener("click", (event) => {

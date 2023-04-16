@@ -81,6 +81,10 @@
   color: #e03131;
 }
 
+.login-logo {
+  width: 100px;
+}
+
 @media only screen and (max-width: 600px) {
   .form {
     padding: 2rem 1rem;
